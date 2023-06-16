@@ -1,12 +1,10 @@
 #include <stdio.h>
 /**
- *main - Starting point of the code 
- *return: returns zero to show success of code
- *
+ * main-It is the most important part
+ * return: It must return 0 for succes
  */
 int main(void)
 {
-    puts("\"Programming is like building a multilingual puzzle");
+    puts("Programming is like building a multilingual puzzle\n");
     return (0);
-
-}    
+}
