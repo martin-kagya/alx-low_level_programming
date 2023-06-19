@@ -9,13 +9,13 @@ int main(void)
 {
 	int i;
 
-	char numberz[] = "0123456789";
+	int numberz[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
 	for (i = 0; i < 10; i++)
 	{
-		char out = numberz[i];
+		int out = numberz[i];
 
-		putchar(out);
+		putchar((char)out + '0');
 	}
 	putchar('\n');
 	return (0);
