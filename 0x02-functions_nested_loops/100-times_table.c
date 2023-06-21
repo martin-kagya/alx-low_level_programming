@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_times_table - Prints the times table of integer n
+ * @n: the type of time taböe we will be printing
  * Return: Always 0 (Success)
  */
 void print_times_table(int n)
