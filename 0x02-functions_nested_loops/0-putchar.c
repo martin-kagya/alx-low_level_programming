@@ -1,8 +1,14 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - Character entry
  * Return: Always 0 (Success)
  */
+_putchar(char c)
+{
+	putchar(c);
+}
+
 int main(void)
 {
 	_putchar('_');
@@ -14,4 +20,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+	return (0);
 }
