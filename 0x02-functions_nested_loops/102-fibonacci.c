@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int64_t a, b, c, temp;
+	long long int a, b, c, temp;
 
 	b = 1;
 	c = 2;
