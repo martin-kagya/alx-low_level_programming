@@ -24,4 +24,5 @@ int print_sign(int c)
 		_putchar(',');
 		return (0);
 	}
+	return (0);
 }
