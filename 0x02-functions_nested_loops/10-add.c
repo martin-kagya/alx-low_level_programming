@@ -10,6 +10,5 @@ int add(int a, int b)
 	int z;
 
 	z = a + b;
-	_putchar(z + '0');
 	return (z);
 }
