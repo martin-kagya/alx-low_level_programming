@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int a, b, c;
+	int a, b, c, temp;
 
 	b = 1;
 	c = 2;
@@ -13,17 +13,15 @@ int main(void)
 	{
 		if (a != 50)
 		{
-		printf("%d, ", b);
-		int temp = b;
-
-		b = c;
-		c = temp + b;
+			printf("%d, ", b);
+			temp = b;
+			b = c;
+			c = temp + b;
 		}
 		else
 		{
 			printf("%d", b);
-			int temp = b;
-
+			temp = b;
 			b = c;
 			b = temp + b;
 		}
