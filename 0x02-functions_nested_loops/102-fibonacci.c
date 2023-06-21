@@ -9,7 +9,7 @@ int main(void)
 
 	b = 1;
 	c = 2;
-	for (a = 2; a <= 50; a++)
+	for (a = 1; a <= 50; a++)
 	{
 		if (a != 50)
 		{
