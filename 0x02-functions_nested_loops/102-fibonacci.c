@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	long long int a, b, c, temp;
+	long int a, b, c, temp;
 
 	b = 1;
 	c = 2;
@@ -13,14 +13,14 @@ int main(void)
 	{
 		if (a != 50)
 		{
-			printf("%lld, ", b);
+			printf("%ld, ", b);
 			temp = b;
 			b = c;
 			c = temp + b;
 		}
 		else
 		{
-			printf("%lld", b);
+			printf("%ld", b);
 			temp = b;
 			b = c;
 			b = temp + b;
