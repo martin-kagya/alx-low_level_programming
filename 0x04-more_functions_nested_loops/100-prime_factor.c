@@ -9,7 +9,7 @@ int main(void)
 	int n;
 	long int number = 612852475143;
 
-	for (n = sqrt(number); n > 2, n++)
+	for (n = sqrt(number); n > 2; n++)
 	{
 		if (number % n == 0)
 		{
