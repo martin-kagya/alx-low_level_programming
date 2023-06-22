@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - Prints fibonacci numbers
  * Return: Always 0 (Success)
