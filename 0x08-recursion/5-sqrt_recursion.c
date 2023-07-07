@@ -6,13 +6,13 @@
  * Return: n as the sqrt when found -1 for failed attempt
  * and a recursive function
  */
-int check(n, b)
+int check(int n, int b)
 {
-	if (n *n == b)
+	if (n * n == b)
 	{
 		return (n);
 	}
-	if (n *n > b)
+	if (n * n > b)
 	{
 		return (-1);
 	}
