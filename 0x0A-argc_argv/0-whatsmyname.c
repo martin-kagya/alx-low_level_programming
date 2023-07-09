@@ -3,11 +3,12 @@
 /**
  * main - Entry point of code
  * @argc: argument count
- * @argv[]: argument vector
+ * @argv: argument vector
+ * Return: alawys 0
  */
-int main(argc, char* argv[])
+int main(argc, char *argv[])
 {
 	(void) argc;
-	printf("%s", argv[0]);
-	return 0;
+	printf("%s\n", argv[0]);
+	return (0);
 }
