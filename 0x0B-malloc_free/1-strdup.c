@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * strdup - copies a string to a pointer
+ * _strdup - copies a string to a pointer
  * @str: string to be copied
  * Return: returns Null when theres an error or string in success
  */
@@ -17,12 +17,12 @@ char *_strdup(char *str)
 	}
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		s = malloc(sizeof(char) * i);
 		if (s == NULL)
 		{
 			return (NULL);
 		}
 	}
+	s = malloc(sizeof(char) * (i + 1));
 	for (j = 0; j < i; j++)
 	{
 		s[j] = str[j];
