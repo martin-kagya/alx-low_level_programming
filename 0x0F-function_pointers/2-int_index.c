@@ -1,10 +1,12 @@
 #include "function_pointers.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * int_index - function which returns an index
  * @array: array input
  * @size: size of the array
  * @cmp: function pointer
- * Return: returns -1 upon error and index of the elm when succeesful
+ * Return: returns -1 upon error and index of the element when succeesful
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
