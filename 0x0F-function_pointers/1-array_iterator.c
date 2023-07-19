@@ -1,4 +1,4 @@
-#include "function_pointer.h"
+#include "function_pointers.h"
 #include <stddef.h>
 /**
  * array_iterator - function to peform action on elemnets of an array
@@ -14,7 +14,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 		while (n < size)
 		{
 			action(array[n]);
-			n++
+			n++;
 		}
 	}
 }
