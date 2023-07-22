@@ -27,7 +27,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(args, n);
 	if (n > 0)
 	{
-		printf("%s", va_arg(args, char *)); 
+		printf("%s", va_arg(args, char *));
 		for (i = 1; i < n; i++)
 		{
 			pointer = va_arg(args, char *);
