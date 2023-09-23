@@ -7,6 +7,9 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
+	int len;
+	char *copy;
+
 	if (str == NULL)
 	{
 		return (NULL);
@@ -17,14 +20,19 @@ list_t *add_node(list_t **head, const char *str)
 	{
 		return (NULL);
 	}
-	new->len = strlen(str);
-	new->str = strdup(str);
-	if (new->str == NULL)
+	copy = strdup(str);
+	if (copy == NULL)
 	{
+		free(copy);
 		return (NULL);
-		free(new);
 	}
+	for (len = 0; str[len];)
+	{
+		len++;
+	}
+	new->str = copy;
+	new->len = len;
 	new->next = *head;
-	*head = new->next;
+	*head = new;
 	return (new);
 }
