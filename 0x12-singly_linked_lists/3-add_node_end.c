@@ -11,7 +11,7 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	char *copy;
+	char *copy = NULL;
 	int len;
 	int i;
 	list_t *new, *last;
@@ -21,6 +21,11 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 
 	copy = strdup(str);
+	if (copy == NULL)
+	{
+		free(new);
+		return NULL;
+	}
 	if (str == NULL)
 	{
 		free(new);
