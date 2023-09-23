@@ -1,4 +1,3 @@
-#include <string.h>
 #include "lists.h"
 /**
  * add_node - add node to to the beginning of the list
