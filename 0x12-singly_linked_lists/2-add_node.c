@@ -3,7 +3,7 @@
  * add_node - add node to to the beginning of the list
  * @head: head for the list
  * @str: string to be copied
- * Return: returns 0;
+ * Return: returns address of the new node or NULL;
  */
 list_t *add_node(list_t **head, const char *str)
 {
