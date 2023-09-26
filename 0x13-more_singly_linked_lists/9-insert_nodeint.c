@@ -4,7 +4,8 @@
  * a specific index
  * @head: pointer to head
  * @idx: index to be used
- * n: number to be used as value
+ * @n: number to be used as value
+ * Return: NULL if out of bounds and the adress of new node on success
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
