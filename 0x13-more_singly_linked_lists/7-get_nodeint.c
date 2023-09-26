@@ -3,7 +3,7 @@
  * get_nodeint_at_index - get the node at a specific index
  * @head: pointer to the head of list
  * @index: index to return itds node
- * Return: node at index 
+ * Return: node at index
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
