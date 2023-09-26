@@ -6,9 +6,11 @@
  */
 void free_listint(listint_t *head)
 {
-	if (head == NULL)
+	listint_t *traverse = head;
+	while (traverse != NULL)
 	{
-		return;
+		listint_t *next = traverse->next;
+		free(traverse);
+		traverse = next;
 	}
-	free(head);
 }
