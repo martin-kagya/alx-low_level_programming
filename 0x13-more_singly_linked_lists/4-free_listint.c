@@ -7,9 +7,11 @@
 void free_listint(listint_t *head)
 {
 	listint_t *traverse = head;
+
 	while (traverse != NULL)
 	{
 		listint_t *next = traverse->next;
+
 		free(traverse);
 		traverse = next;
 	}
